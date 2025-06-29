@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>catblob 2</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="status">
+    <div class="life-indicator">
+      <div class="life-marker"></div>
+      <div class="life-marker"></div>
+      <div class="life-marker"></div>
+      <div class="life-marker"></div>
+    </div>  
+    <div class="catch-indicator">
+      <label class="mouseblob catch-label"></label>
+      <span>x</span>
+      <div class="catch-no no"></div>
+    </div>
+    <div class="time-indicator no">90</div>
+  </div>
+
+  <div class="overlay wrapper flex-center overflow-hidden">
+    <div class="cursor d-none"></div>
+    <div class="message-window flex-center">
+      <div class="message">
+        <h1 class="title">catblob 2</h1>
+      </div>
+      <div class="how-to-play">
+        <p>Catch all mouseblobs within the time limit, while avoiding dogblobs.</p>
+        <p>Move around with the arrow keys or the onscreen control UI.</p>
+        <p>Create/destroy pink blocks by clicking or touching map.</p>
+      </div>
+      <button class="start">start</button>
+    </div>
+  </div>
+
+  <div class="main wrapper overflow-hidden flex-center">
+    <div class="map-cover flex-center overflow-hidden">
+      <div class="map-image-wrapper">
+        <canvas class="map-image"></canvas>
+      </div>
+      <div class="player sprite-container">
+        <div class="overflow-hidden">
+          <div class="catblob sprite"></div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="control-wrapper">
+    <div class="control"></div>
+  </div>
+
+  <img class="map-tiles d-none" src="your-map-image.png" alt="map tiles" />
+
+  <div class="sign">
+    by masahito / <a href="http://www.ma5a.com/">ma5a.com</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
